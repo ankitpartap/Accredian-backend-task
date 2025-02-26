@@ -10,7 +10,7 @@ const app = express();
 const prisma = new PrismaClient();
 
 // Middleware
-app.use(cors({ origin: "http://localhost:3001", credentials: true })); // Fixed CORS
+app.use(cors({ origin: "http://localhost:3000", credentials: true })); // Fixed CORS
 app.use(express.json());
 
 // Routes

@@ -20,7 +20,8 @@ export const submitReferral = async (req, res) => {
         message,
       },
     });
-
+    console.log(newReferral);
+    
     res.status(201).json({ message: "Referral submitted successfully", data: newReferral });
   } catch (error) {
     console.error("Error saving referral:", error);
